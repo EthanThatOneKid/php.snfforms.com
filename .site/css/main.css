@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* Main Site Design CSS Document */
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: "Helvetica Neue LT Std", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #565759;
+}
+
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+
+img#bgImage {position:fixed !important;}
+
+#content_wrap {
+	margin-left: 75px;
+}
+
+#dropdown_container, #dropdown_container2 {
+	position: fixed;
+	width: 100%;
+	height: 0;
+	z-index: 40;
+	overflow: visible;
+}
+
+#dropdown_container2 {
+	z-index: 60;
+}
+
+* html #dropdown_container, * html #dropdown_container2 {
+	position: absolute;
+}
+
+#dropdown {
+	width: 483px;
+	height: 349px;
+	margin: 0 auto;
+	background: url(../images/dropdown_bg2.png) no-repeat center bottom;
+	position: relative;
+	left: 303px;
+	top: 0px;
+	display: none;
+}
+
+.dropdown_user {
+	height: 392px !important;
+}
+
+#dropdown_content {
+	width: 455px;
+	height: 257px;
+	margin: 0 auto;
+	position: relative;
+	left: 299px;
+	top: 32px;
+	display: none;
+}
+
+.dropdown_content_user {
+	height: 300px !important;
+}
+
+#dropdown_content ul {
+	margin: 0;
+	padding: 0;
+	width: 455px;
+	list-style: none;
+	position: absolute;
+	top: 0px;
+}
+#dropdown_content ul li {
+	height: 42px;
+	line-height: 42px;
+	font-size: 16px;
+	border-bottom: 1px solid #DCDDDE;
+	overflow: hidden;
+}
+#dropdown_content ul li.bottom {
+	border-bottom: 0px;	
+}
+#dropdown_content ul li.more {
+	text-align: right;
+}
+#dropdown_content ul li.more a div {
+	display: none;
+}
+#dropdown_content ul li a {
+	display: block;
+	padding: 0 20px;
+	text-decoration: none;
+	color: #E6E7E8;
+	height: 42px;
+}
+#dropdown_content ul li a div.arrow {
+	height: 42px;
+	width: 23px;
+	background: url(../images/dropdown_arrow.png) no-repeat;
+	float: left;	
+}
+#dropdown_content ul li a:hover {
+	background: url(../images/dropdown_bg_blue.png);
+}
+#dropdown_content ul li.bottom a:hover {
+	background: url(../images/dropdown_bg_blue_bottom.png) no-repeat;
+}
+
+#menu_container {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background: url(../images/menu_bg.png) repeat-x;
+	overflow: hidden;
+	z-index: 50;
+}
+
+* html #menu_container {
+	position: absolute;
+}
+
+#menu_space {
+	height: 50px;	
+}
+
+#menu {
+	height: 32px;
+	width: 982px;
+	margin: 0 auto;
+	border-right: 1px solid #6F7173;
+	border-left: 1px solid #DCDDDE;
+	position: relative;
+	left: 36px;
+}
+
+#menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+}
+#menu ul li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	text-align: center;
+	zoom: 1;
+	border-left: 1px solid #6F7173;
+	border-right: 1px solid #DCDDDE;
+}
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #565759;
+	height: 32px;
+	background: url(../images/menu_bg.png) repeat-x;
+}
+#menu ul li a:hover, #menu ul li a.hover {
+	color: #D1D3D4;
+	background: url(../images/menu_bg_over.gif) repeat-x;
+}
+#menu_home {width: 120px;}
+#menu_home_logo {float: left; margin-top: 2px; margin-left: 20px;}
+#menu_contact {width: 135px;}
+#menu_login {width: 158px;}
+#menu_signup {width: 105px;}
+#menu_catalogue_search {width: 454px;}
+#menu_search_spacer {width: 304px; float: right;}
+#menu_search_icon {float: left; margin-top: 5px; margin-right: 5px;}
+#menu_search_query {margin-top: 5px; background: url(../images/menu_search_bar.png) no-repeat; width: 239px; height: 16px; border: 0px; padding: 3px 10px; font-size: 12px; line-height: 16px; font-family: Arial, Helvetica, sans-serif; color: #000000; }
+
+#menu_search {
+	position: absolute;
+	right: 0px;
+	height: 32px;
+	padding: 0 25px 0 10px;
+}
+
+#master_holes {
+	height: 27px;
+	text-align: right;
+}
+#master_holes a {
+	float: right;
+	display: block;
+	height: 27px;
+	background: url(../images/master_holes.png) no-repeat;
+}
+#master_holes a.side {
+	width: 108px;
+	background-position: 0px 0px;
+}
+#master_holes a.side:hover {
+	background-position: 0px -54px;
+}
+#master_holes a.side.selected, #master_holes a.side.selected:hover {
+	background-position: 0px -27px;
+}
+#master_holes a.top {
+	width: 109px;
+	background-position: -108px 0px;
+}
+#master_holes a.top:hover {
+	background-position: -108px -54px;
+}
+#master_holes a.top.selected, #master_holes a.top.selected:hover {
+	background-position: -108px -27px;
+}
+.master_sort_row {
+	color: #808285;
+}
+.master_sort_row a {
+	color: #808285;
+	text-decoration: none;
+}
+.master_sort_row a:hover, .master_sort_row a.selected {
+	color: #231F20;
+}
+.master_sort_row .master_sort_down, .master_sort_row .master_sort_up {
+	width: 12px;
+	height: 6px;
+	background: url(../images/master_sort_arrows.png) no-repeat;
+	background-position: 0px -6px;
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+}
+.master_sort_row .master_sort_up {
+	background-position: 0px 0px;
+}
+.master_even {
+	background: url(../images/master_even_bg.png) repeat;
+}
+.master_quantity {
+	width: 45px;
+	height: 17px;
+	padding: 3px 5px;
+	border: 0px;
+	margin: 0px;
+	background: url(../images/master_field_quantity.png) no-repeat;
+	text-align: right;
+}
+.master_comments {
+	width: 131px;
+	height: 17px;
+	padding: 3px 5px;
+	border: 0px;
+	margin: 0px;
+	background: url(../images/master_field_comments.png) no-repeat;
+}
+
+#footer {
+	text-align: center;
+	width: 85%;
+	height: 40px;
+	line-height: 40px;
+	margin-top: -56px;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -39%;
+}
+
+#footer2 {
+	display: none;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	width: 85%;
+	margin: 0 auto;
+}
+
+#footer_space {
+	height: 56px;	
+}
+
+input, textarea {
+	outline: 0 none;
+}
+
+textarea {
+   resize: none;
+}
