@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* Pages-Specific CSS Document */
+
+/* HOME PAGE */
+
+#home_center {
+	width: 688px;
+	height: 450px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.home_vertical_center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -225px;
+	margin-left: -344px;
+}
+
+.home_center {
+	margin: 0 auto;
+}
+
+
+/* FORM CATALOG */
+
+.catalog_block {
+	width: 246px;
+	margin-bottom: 25px;
+	display: -moz-inline-stack;
+    display: inline-block;
+	zoom: 1;
+	*display: inline;
+    _height: 378px;
+}
+
+.catalog_block a {
+	text-decoration: none;
+	color: #565759;	
+}
+
+.catalog_block .catalog_title {
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.catalog_block .catalog_thumb {
+	position: relative;
+	width: 172px;
+	height: 224px;
+	margin: 0 auto 8px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.catalog_block .catalog_thumb .catalog_thumb_link {
+	text-decoration: none;
+	display: block;
+	line-height: 224px;
+}
+
+.catalog_block .catalog_thumb .page_icon_container {
+	position: absolute;
+	bottom: 0px;
+	width: 172px;
+	height: 35px;
+}
+
+.catalog_block .catalog_thumb .page_icon {
+	float: left;
+	width: 25px;
+	height: 25px;
+	padding: 5px 4px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 14px;
+	background: url(../images/side_icon.png) no-repeat center center;
+}
+
+.catalog_block .catalog_thumb .page_icon a {
+	text-decoration: none;
+	color: #808285;
+	display: block;
+	text-align: center;
+	line-height: 25px;
+}
+
+.catalog_block .catalog_thumb .selected {
+	background: url(../images/side_icon_selected.png) no-repeat center center;	
+	color: #D3D5D6;
+}
+
+.catalog_block .catalog_thumb .selected a {
+	color: #D3D5D6;
+}
+
+input.text_input, input.text_input_3digit, input.text_input_4digit, textarea.textarea_input {
+	border: 0px;
+	padding: 3px 10px;
+	font-size: 12px;
+	line-height: 21px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+input.text_input, input.text_input_3digit, input.text_input_4digit {
+	height: 21px;
+}
+input.text_input {
+	background: url(../images/fields_text.gif) no-repeat;
+	width: 239px;
+}
+input.text_input_3digit {
+	background: url(../images/fields_3digit.gif) no-repeat;
+	width: 54px;
+	margin-right: 5px;
+}
+input.text_input_4digit {
+	background: url(../images/fields_4digit.gif) no-repeat;
+	width: 80px;
+}
+textarea.textarea_input {
+	background: url(../images/fields_textarea.gif) no-repeat;
+	width: 677px;
+	height: 157px;
+}
+
+/* FORM DETAIL */
+
+.quantityDiv {
+	width: 134px;
+	height: 27px;
+	margin: 0 auto;
+	background: url(../images/button_quantity.gif) no-repeat;
+	text-align: right;	
+}
+.quantityDiv input {
+	margin: 3px 8px 0 0;
+	padding: 2px;
+	border: 1px inset #F0F0F0;
+	width: 35px;
+	height: 15px;
+}

@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* Print CSS Document */
+
+body {
+	background: white !important;
+}
+
+#bgImage, #menu_search_spacer, #menu_search, #footer_space, #footer {
+	display: none !important;	
+}
+
+#menu_catalogue_search {
+	width: 133px !important;
+}
